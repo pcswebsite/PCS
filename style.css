@@ -79,7 +79,6 @@ html {
 .con3_con {
     padding: 2%;
     padding-top: 0;
-    margin-right: 2%;
     flex-basis: 50%;
 }
 
@@ -123,7 +122,6 @@ html {
 .why_pcs_con {
     padding: 2%;
     padding-top: 0;
-    margin-right: 2%;
     flex-basis: 60%;
 }
 
@@ -161,7 +159,6 @@ html {
 .services_con {
     padding: 2%;
     padding-top: 0;
-    margin-right: 2%;
     flex-basis: 70%;
 }
 
@@ -216,5 +213,6 @@ html {
     }
 
 }
+
 
 
