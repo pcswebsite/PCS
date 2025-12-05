@@ -198,4 +198,22 @@ html {
 .connect-button:hover {
     /* Optional: change style on hover for interactivity */
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+
+}
+.footer-container{
+    display: flex;
+    background-color: #A5DCE5;
+    padding-top: 4%;
+    padding-left: 5%;
+    padding-bottom: 10%;
+}
+.contact_us{
+    font-size: xxx-large;
+}
+@media screen and (max-width: 480px) {
+    .footer-container {
+        flex-direction: column;
+        /* Stacks items vertically on mobile */
+    }
+
 }
