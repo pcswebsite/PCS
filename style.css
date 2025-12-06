@@ -207,14 +207,19 @@ html {
     padding-bottom: 10%;
 }
 .contact_us{
-    font-size: xxx-large;
+    font-size: xx-large;
 }
 @media screen and (max-width: 480px) {
     .footer-container {
         flex-direction: column;
         /* Stacks items vertically on mobile */
     }
-
+}
+.linkedin{
+    text-decoration:none;
+    color: rgb(0, 0, 128);
+    font-size:large;
+    font-weight: bold;
 }
 
 
