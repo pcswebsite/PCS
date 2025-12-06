@@ -215,15 +215,10 @@ html {
         /* Stacks items vertically on mobile */
     }
 }
-.linkedin{
-    text-decoration:none;
-    color: rgb(0, 0, 128);
-    font-size:large;
-    font-weight: bold;
-}
 .in_logo{
-    width:2%;
+    width:4%;
 }
+
 
 
 
