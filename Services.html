@@ -4,56 +4,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style type="text/css">
-        .main_container {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-size: large;
-        }
-        .nav a{
-          
-           text-decoration: none;
-
-        }
-      .con2{
-        display: flex;
-      }
-      .con2 ul{
-        list-style-type: none;
-      }
-      .con2 li{
-        background-color: #012e42;
-        margin: 2%;
-        padding: 5%;
-        color: white;
-      }
-    </style>
+    <meta name="keywords"
+        content="SEO Blogs, Pharma & Biotech Content, Website Content Solutions, SEO Content, APIs & FDFs, Pharma Excipients, CDMO, CMO, CRO">
+    <meta name="description"
+        content="Contact Pharma Content Solutions for high-quality SEO blogs, articles, and Website content creation for your APIs, Excipients, Finished Formulations, Biologics, and contract services including CDMOs, CROs, and CMOs. Boost your rankings and stay ahead of competitors.">
+    <title>Pharma Content | SEO Blogs | API, Excipients, FDF, CDMO</title>
+    <link rel="canonical" href="https://pharmacontentsolutions.com/">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+<script>
+    const menuToggle = document.getElementById("menuToggle");
+    const mainNav = document.getElementById("mainNav");
+    const dropdownToggle = document.querySelector(".dropdown-toggle");
+    const navDropdown = document.querySelector(".nav-dropdown");
+
+    menuToggle.addEventListener("click", function () {
+        mainNav.classList.toggle("active");
+    });
+
+    dropdownToggle.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        if (window.innerWidth <= 768) {
+            navDropdown.classList.toggle("open");
+        }
+    });
+</script>
 
 <body>
-    <div class="main_container">
-        <div class="nav">
-            <p><a href="index.html">Home</a>>Services</p>
+    <header class="site-header">
+
+        <div class="header-container">
+
+            <!-- Logo -->
+            <a href="index.html" class="text-logo">
+                Pharma Content Solutions
+            </a>
+
+
+            <!-- Mobile Menu Button -->
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+                ☰
+            </button>
+
+
+            <!-- Navigation -->
+            <nav class="main-nav" id="mainNav">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+
+                <a href="services.html">
+                    Services
+                </a>
+
+
+                <!-- Blogs Dropdown -->
+                <div class="nav-dropdown">
+
+                    <button class="dropdown-toggle" type="button">
+                        Blogs
+                        <span class="dropdown-arrow"></span>
+                    </button>
+
+
+                    <div class="dropdown-menu">
+
+                        <a href="blogs/The Evolving Pharmaceutical Excipients Landscape.html">
+                            The Evolving Pharmaceutical Excipients Landscape: Trends, Challenges, and Growth
+                            Opportunities in 2026
+                        </a>
+
+                        <a href="blogs/Beyond Manufacturing.html">
+                            Beyond Manufacturing: How the CDMO Landscape Is Evolving
+                        </a>
+
+                        <a href="blogs/Beyond Formulation.html">
+                            Beyond Formulation: How the Cosmetics Industry Is Evolving
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </nav>
+
         </div>
-        <hr>
-        <div class="con2">
 
-            <ul>
-                <li>SEO-Optimized Articles & Blogs – Engaging, authoritative content designed
-                    to attract, inform, and convert your target pharma and biotech audience.</li>
-                <li>Comprehensive Audit Reports – Detailed website and SEO audits to
-                    uncover growth opportunities for your APIs, FDFs, or contract service
-                    business helping you generate more qualified leads.</li>
-                <li>Digital Competitor Analysis – Actionable insights that enable you to stay
-                    ahead of real competitors in the evolving digital landscape.</li>
-                <li>Website Content Strategy & Creation – Clear, compelling, and
-                    search-optimized content that builds credibility, helps your business achieve
-                    top rankings on Google for key capabilities, and drives sustainable traffic.</li>
-            </ul>
-
+    </header>
+    <section>
+        <div class="services">
+            <p class="services_title">Services</p>
+            <div class="services_main_con">
+                <div class="services_img_con">
+                    <img src="services.png" class="services_img">
+                </div>
+                <div class="services_con">
+                    <p class="services_con_h">SEO-Optimized Articles & Blogs</p>
+                    <p>Engaging, authoritative content designed to attract, inform, and convert your target pharma and
+                        biotech audience.</p>
+                    <p class="services_con_h">Comprehensive Audit Reports</p>
+                    <p>Detailed website and SEO audits to uncover growth opportunities for your APIs, FDFs, or contract
+                        service business helping you generate more qualified leads.</p>
+                    <p class="services_con_h">Digital Competitor Analysis</p>
+                    <p>Actionable insights that enable you to stay ahead of real competitors in the evolving digital
+                        landscape.</p>
+                    <p class="services_con_h">Website Content Strategy & Creation</p>
+                    <p>Clear, compelling, and search-optimized content that builds credibility, helps your business
+                        achieve
+                        top rankings on search engines for key capabilities, and drives sustainable traffic.</p>
+                </div>
+            </div>
         </div>
-
-    </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <!-- Contact Information Section -->
+            <div class="contact-info">
+                <p class="contact_us">Contact Us</p>
+                <p><strong>Email</strong><br><a
+                        href="mailto:info@pharmacontentsolutions.com">info@pharmacontentsolutions.com</a></p>
+                <a href="https://www.linkedin.com/company/pharma-content-solutions/" class="linkedin"><img
+                        src="LinkedIn_logo.png" class="in_logo"></a>
+            </div>
+        </div>
+    </footer>
 </body>
-
-</html>

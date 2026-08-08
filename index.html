@@ -10,9 +10,67 @@
   <link rel="canonical" href="https://pharmacontentsolutions.com/">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+<script>
+    const menuToggle = document.getElementById("menuToggle");
+    const mainNav = document.getElementById("mainNav");
+    const dropdownToggle = document.querySelector(".dropdown-toggle");
+    const navDropdown = document.querySelector(".nav-dropdown");
+
+    menuToggle.addEventListener("click", function () {
+        mainNav.classList.toggle("active");
+    });
+
+    dropdownToggle.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        if (window.innerWidth <= 768) {
+            navDropdown.classList.toggle("open");
+        }
+    });
+</script>
 
 <body>
+    <header class="site-header">
+    <div class="header-container">
 
+        <!-- Logo -->
+        <a href="index.html" class="site-logo">
+            <div class="text-logo">
+                <span>Pharma Content Solutions</span>
+            </div>
+        </a>
+
+        <!-- Mobile Menu Button -->
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+            ☰
+        </button>
+
+        <!-- Navigation -->
+        <nav class="main-nav" id="mainNav">
+            <a href="index.html">Home</a>
+
+            <a href="services.html">Services</a>
+
+            <!-- Blogs Dropdown -->
+            <div class="nav-dropdown">
+                <button class="dropdown-toggle">
+                    Blogs <span class="dropdown-arrow"></span>
+                </button>
+
+                <div class="dropdown-menu">
+                    <a href="blogs/The Evolving Pharmaceutical Excipients Landscape.html">The Evolving Pharmaceutical Excipients Landscape: Trends, Challenges, and Growth Opportunities in 2026</a>
+                    <a href="blogs/Beyond Manufacturing.html">Beyond Manufacturing: How the CDMO Landscape Is Evolving</a>
+                    <a href="blogs/Beyond Formulation.html">Beyond Formulation: How the Cosmetics Industry Is Evolving</a>
+                </div>
+            </div>
+
+        </nav>
+
+    </div>
+</header>
+
+<section>
+    <div class="container">
     <div class="con1">
         <div class="con2">
             <img src="pcs_image.png" class="pcs-image">
@@ -104,6 +162,8 @@
             </div>
         </div>
     </div>
+ </div>
+</section>
     <footer>
         <div class="footer-container">
             <!-- Contact Information Section -->
