@@ -515,21 +515,6 @@ html {
     padding: 40px 0 80px;
 }
 
-.blog-container {
-    width: 100%;
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 0 20px;
-    box-sizing: border-box;
-
-    display: grid;
-    grid-template-columns: minmax(0, 900px) 220px;
-    justify-content: center;
-    gap: 60px;
-    align-items: start;
-}
-
-
 /* ARTICLE */
 
 .blog-article {
@@ -575,72 +560,12 @@ html {
 }
 
 
-/* SIDEBAR */
-
-.blog-sidebar {
-    width: 220px;
-    display: block;
-}
-
-
 /* ADS */
-
-.blog-ad {
-    width: 280px;
-    margin: 45px auto;
-    text-align: center;
-}
-
-.blog-ad img {
-    width: 280px;
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-/* Second advertisement inside article */
-
-.blog-inline-ad {
-    width: 280px;
-    margin: 45px auto;
-    text-align: center;
-}
-
-.blog-inline-ad img {
-    width: 280px;
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
 
 
 /* =========================================
    TABLET
 ========================================= */
-
-@media (max-width: 1000px) {
-
-    .blog-container {
-        grid-template-columns: minmax(0, 1fr) 180px;
-        gap: 30px;
-    }
-
-    .blog-sidebar {
-        width: 180px;
-    }
-
-    .blog-ad {
-        width: 150px;
-    }
-
-    .blog-ad img {
-        width: 150px;
-    }
-
-}
 
 
 /* =========================================
@@ -648,11 +573,6 @@ html {
 ========================================= */
 
 @media (max-width: 768px) {
-
-    .blog-container {
-        display: block;
-        padding: 0 20px;
-    }
 
     .blog-article {
         font-size: 16px;
@@ -672,20 +592,6 @@ html {
 
     .blog-article h4 {
         font-size: 18px;
-    }
-
-    .blog-sidebar {
-        width: 100%;
-        margin-top: 45px;
-    }
-
-    .blog-ad {
-        width: 190px;
-        margin: 0 auto 30px;
-    }
-
-    .blog-ad img {
-        width: 190px;
     }
 
 
@@ -708,14 +614,14 @@ html {
     border-left: 5px solid #163B5C;
     color: #163B5C;
     font-size: 18px;
-    line-height: 1.7;
+    
     font-style: italic;
     border-radius: 0 5px 5px 0;
 }
 
 .blog-infographic {
     width: 100%;
-    max-width: 850px;
+    max-width: 400px;
     margin: 40px auto;
     text-align: center;
 }
@@ -727,4 +633,144 @@ html {
     display: block;
     margin: 0 auto;
     border-radius: 4px;
+}
+
+
+/* =========================================
+   BLOG 1 - FULL WIDTH ARTICLE
+========================================= */
+
+.blog-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.blog-article {
+    width: 100%;
+    max-width: none;
+}
+
+
+/* =========================================
+   FIRST ADVERTISEMENT
+   Floats beside article text
+========================================= */
+
+.blog-ad-top {
+    float: right;
+    width: 220px;
+    margin: 10px 0 30px 45px;
+}
+
+.blog-ad-top img {
+    display: block;
+    width: 220px;
+    height: auto;
+    max-width: 100%;
+}
+
+
+/* =========================================
+   SECOND ADVERTISEMENT
+   Inside article near bottom
+========================================= */
+
+.blog-inline-ad {
+    width: 280px;
+    margin: 45px auto;
+    text-align: center;
+    clear: both;
+}
+
+.blog-inline-ad img {
+    display: block;
+    width: 280px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .blog-container {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .blog-ad-top {
+        float: none;
+        width: 220px;
+        margin: 30px auto;
+    }
+
+    .blog-ad-top img {
+        width: 220px;
+        max-width: 100%;
+    }
+
+    .blog-inline-ad {
+        width: 220px;
+        margin: 35px auto;
+    }
+
+    .blog-inline-ad img {
+        width: 220px;
+    }
+
+}
+
+/* =========================================
+   MOBILE BLOG DROPDOWN
+========================================= */
+
+@media (max-width: 768px) {
+
+    .nav-dropdown {
+        position: relative;
+        width: 100%;
+    }
+
+    .nav-dropdown .dropdown-menu {
+        position: static !important;
+        display: none;
+
+        width: 100%;
+        min-width: 0;
+
+        margin: 0;
+        padding: 0;
+
+        transform: none !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+
+        box-shadow: none;
+        border: none;
+
+        transition: none !important;
+    }
+
+    .nav-dropdown.open .dropdown-menu {
+        display: block !important;
+    }
+
+    .nav-dropdown .dropdown-menu a {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px 20px;
+    }
+
+    .dropdown-toggle {
+        width: 100%;
+        text-align: left;
+    }
 }
