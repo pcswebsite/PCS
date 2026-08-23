@@ -634,6 +634,7 @@ html {
     width: 100%;
     height: auto;
     display: block;
+<<<<<<< HEAD
 }
 
 
@@ -771,9 +772,30 @@ html {
         width: 100%;
         text-align: left;
     }
+=======
+>>>>>>> 394addf (Update website)
 }
 
 
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .blog-infographic {
+        float: none;
+        width: 90%;
+        max-width: 320px;
+        margin: 25px auto;
+    }
+
+    .blog-infographic img {
+        width: 100%;
+        height: auto;
+    }
+
+}
 /* =========================================
    BLOG 1 - FULL WIDTH ARTICLE
 ========================================= */
@@ -799,38 +821,16 @@ html {
 
 .blog-ad-top {
     float: right;
-    width: 220px;
+    width: 320px;
     margin: 10px 0 30px 45px;
 }
 
 .blog-ad-top img {
     display: block;
-    width: 220px;
+    width: 320px;
     height: auto;
     max-width: 100%;
 }
-
-
-/* =========================================
-   SECOND ADVERTISEMENT
-   Inside article near bottom
-========================================= */
-
-.blog-inline-ad {
-    width: 280px;
-    margin: 45px auto;
-    text-align: center;
-    clear: both;
-}
-
-.blog-inline-ad img {
-    display: block;
-    width: 280px;
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
-}
-
 
 /* =========================================
    MOBILE
