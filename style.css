@@ -619,23 +619,43 @@ html {
     border-radius: 0 5px 5px 0;
 }
 
+/* =========================================
+   BLOG 3 INFOGRAPHIC
+========================================= */
+
 .blog-infographic {
-    width: 100%;
-    max-width: 400px;
-    margin: 40px auto;
-    text-align: center;
+    float: left;
+    width: 320px;
+    max-width: 100%;
+    margin: 5px 30px 25px 0;
 }
 
 .blog-infographic img {
     width: 100%;
-    max-width: 850px;
     height: auto;
     display: block;
-    margin: 0 auto;
-    border-radius: 4px;
 }
 
 
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .blog-infographic {
+        float: none;
+        width: 90%;
+        max-width: 320px;
+        margin: 25px auto;
+    }
+
+    .blog-infographic img {
+        width: 100%;
+        height: auto;
+    }
+
+}
 /* =========================================
    BLOG 1 - FULL WIDTH ARTICLE
 ========================================= */
@@ -661,38 +681,16 @@ html {
 
 .blog-ad-top {
     float: right;
-    width: 220px;
+    width: 320px;
     margin: 10px 0 30px 45px;
 }
 
 .blog-ad-top img {
     display: block;
-    width: 220px;
+    width: 320px;
     height: auto;
     max-width: 100%;
 }
-
-
-/* =========================================
-   SECOND ADVERTISEMENT
-   Inside article near bottom
-========================================= */
-
-.blog-inline-ad {
-    width: 280px;
-    margin: 45px auto;
-    text-align: center;
-    clear: both;
-}
-
-.blog-inline-ad img {
-    display: block;
-    width: 280px;
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
-}
-
 
 /* =========================================
    MOBILE
