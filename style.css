@@ -772,3 +772,143 @@ html {
         text-align: left;
     }
 }
+
+
+/* =========================================
+   BLOG 1 - FULL WIDTH ARTICLE
+========================================= */
+
+.blog-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.blog-article {
+    width: 100%;
+    max-width: none;
+}
+
+
+/* =========================================
+   FIRST ADVERTISEMENT
+   Floats beside article text
+========================================= */
+
+.blog-ad-top {
+    float: right;
+    width: 220px;
+    margin: 10px 0 30px 45px;
+}
+
+.blog-ad-top img {
+    display: block;
+    width: 220px;
+    height: auto;
+    max-width: 100%;
+}
+
+
+/* =========================================
+   SECOND ADVERTISEMENT
+   Inside article near bottom
+========================================= */
+
+.blog-inline-ad {
+    width: 280px;
+    margin: 45px auto;
+    text-align: center;
+    clear: both;
+}
+
+.blog-inline-ad img {
+    display: block;
+    width: 280px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .blog-container {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .blog-ad-top {
+        float: none;
+        width: 220px;
+        margin: 30px auto;
+    }
+
+    .blog-ad-top img {
+        width: 220px;
+        max-width: 100%;
+    }
+
+    .blog-inline-ad {
+        width: 220px;
+        margin: 35px auto;
+    }
+
+    .blog-inline-ad img {
+        width: 220px;
+    }
+
+}
+
+/* =========================================
+   MOBILE BLOG DROPDOWN
+========================================= */
+
+@media (max-width: 768px) {
+
+    .nav-dropdown {
+        position: relative;
+        width: 100%;
+    }
+
+    .nav-dropdown .dropdown-menu {
+        position: static !important;
+        display: none;
+
+        width: 100%;
+        min-width: 0;
+
+        margin: 0;
+        padding: 0;
+
+        transform: none !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+
+        box-shadow: none;
+        border: none;
+
+        transition: none !important;
+    }
+
+    .nav-dropdown.open .dropdown-menu {
+        display: block !important;
+    }
+
+    .nav-dropdown .dropdown-menu a {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px 20px;
+    }
+
+    .dropdown-toggle {
+        width: 100%;
+        text-align: left;
+    }
+}
