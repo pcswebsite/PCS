@@ -909,3 +909,41 @@ html {
         text-align: left;
     }
 }
+
+/* =========================================
+   BLOG DROPDOWN - SCROLLABLE
+========================================= */
+
+.nav-dropdown {
+    position: relative;
+}
+
+.nav-dropdown .dropdown-menu {
+    max-height: 70vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/* Smooth scrollbar */
+.nav-dropdown .dropdown-menu::-webkit-scrollbar {
+    width: 6px;
+}
+
+.nav-dropdown .dropdown-menu::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .nav-dropdown .dropdown-menu {
+        max-height: 60vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+}
