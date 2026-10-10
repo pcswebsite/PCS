@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suppliers | Pharma Content Solutions</title>
+    <meta name="description"
+        content="Explore pharmaceutical suppliers and their products through Pharma Content Solutions.">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="header-container">
+            <a href="../index.html" class="text-logo">
+                Pharma Content Solutions
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+                ☰
+            </button>
+
+            <nav class="main-nav" id="mainNav">
+                <a href="../index.html">Home</a>
+                <a href="../Services.html">Services</a>
+
+                <div class="nav-dropdown">
+                    <button class="dropdown-toggle" type="button">
+                        Blogs <span class="dropdown-arrow"></span>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a href="../blogs/The Evolving Pharmaceutical Excipients Landscape.html">The Evolving
+                            Pharmaceutical Excipients Landscape: Trends, Challenges, and Growth Opportunities in
+                            2026</a>
+                        <a href="../blogs/Beyond Manufacturing.html">Beyond Manufacturing: How the CDMO Landscape Is
+                            Evolving</a>
+                        <a href="../blogs/Beyond Formulation.html">Beyond Formulation: How the Cosmetics Industry Is
+                            Evolving</a>
+                        <a href="../blogs/Nutraceutical.html">Nutraceutical Ingredients Manufacturers: Key Ingredients &
+                            Industry Trends
+                        </a>
+
+                        <a href="../blogs/cro.html">
+                            CROs for Analytical Services: Key Capabilities & Industry Trends
+                        </a>
+                        <a href="../blogs/API.html">
+                            Pharma API Manufacturers: Types, Therapeutic Areas & Industry Trends
+                        </a>
+                        <a href="../blogs/Bioanalytical CRO Services.html">
+                            Bioanalytical CRO Services: Key Expertise, Technologies & Trends
+                        </a>
+                        <a href="../blogs/Peptide API.html">
+                            Peptide APIs: Types, Applications & Emerging Trends
+                        </a>
+                        <a href="../blogs/HPAPI Manufacturing.html">
+                            HPAPI Manufacturing: Key Considerations, Applications & Industry Trends
+                        </a>
+
+                        <a href="../blogs/Biologics in Pharmaceutical Innovation.html">
+                            Biologics in Pharmaceutical Innovation: Manufacturing, Applications, and Global Outlook
+                        </a>
+
+                        <a href="../blogs/Small Molecule API Manufacturing.html">
+                            Small Molecule API Manufacturing: Quality & Industry Outlook
+                        </a>
+
+                        <a href="../blogs/Injectable.html">
+                            Advancing Injectable Manufacturing and Drug Delivery
+                        </a>
+
+                        <a href="../blogs/Pharmaceutical Granules.html">
+                            Pharmaceutical Granules: Processes, Types, and Manufacturing Considerations
+                        </a>
+
+                        <a href="../blogs/Oral Solid Dosage Forms.html">
+                            Oral Solid Dosage Forms: Manufacturing, Formulations and Pharmaceutical Landscape
+                        </a>
+
+                    </div>
+                </div>
+
+                <a href="./">Suppliers</a>
+
+            </nav>
+        </div>
+    </header>
+
+    <main class="suppliers-page">
+        <section class="suppliers-intro">
+            <h1>Our Suppliers</h1>
+            <p>
+                Explore our supplier network and learn more about the
+                companies supporting the pharmaceutical industry.
+            </p>
+        </section>
+
+        <section class="supplier-grid">
+
+            <a class="supplier-card" href="gangwal/">
+                <div class="supplier-logo">
+                    <img src="../images/gangwal.PNG" alt="Gangwal Healthcare logo">
+                </div>
+                <h2>Gangwal Healthcare</h2>
+                <p>
+                    Pharmaceutical excipients, formulation intermediates,
+                    pellets, APIs and advanced drug delivery solutions.
+                </p>
+                <span class="supplier-card-link">View Supplier Profile →</span>
+            </a>
+
+            <!-- Copy another supplier-card here for each new supplier -->
+
+        </section>
+    </main>
+
+
+    <script>
+        const menuToggle = document.getElementById("menuToggle");
+        const mainNav = document.getElementById("mainNav");
+        const dropdownToggle = document.querySelector(".dropdown-toggle");
+        const navDropdown = document.querySelector(".nav-dropdown");
+
+        menuToggle.addEventListener("click", function () {
+            const isOpen = mainNav.classList.toggle("active");
+            menuToggle.setAttribute("aria-expanded", isOpen);
+        });
+
+        if (dropdownToggle && navDropdown) {
+            dropdownToggle.addEventListener("click", function () {
+                if (window.innerWidth <= 768) {
+                    navDropdown.classList.toggle("open");
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>

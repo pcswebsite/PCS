@@ -1007,3 +1007,166 @@ html {
     }
 
 }
+
+
+/* =========================================
+   SUPPLIER DIRECTORY
+========================================= */
+
+.suppliers-page,
+.supplier-profile-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 55px 24px 70px;
+}
+
+.suppliers-intro {
+    text-align: center;
+    max-width: 760px;
+    margin: 0 auto 40px;
+}
+
+.suppliers-intro h1,
+.supplier-profile h1 {
+    margin-bottom: 16px;
+}
+
+.suppliers-intro p {
+    line-height: 1.8;
+}
+
+.supplier-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 28px;
+}
+
+.supplier-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 28px;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid #e3e7eb;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.supplier-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.10);
+}
+
+.supplier-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 130px;
+    margin-bottom: 18px;
+}
+
+.supplier-logo img {
+    max-width: 100%;
+    max-height: 110px;
+    object-fit: contain;
+}
+
+.supplier-card h2 {
+    font-size: 1.3rem;
+    margin: 8px 0 12px;
+}
+
+.supplier-card p {
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.supplier-card-link {
+    margin-top: auto;
+    font-weight: 600;
+}
+
+/* =========================================
+   INDIVIDUAL SUPPLIER PROFILE
+========================================= */
+
+.supplier-profile {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.supplier-profile-logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.supplier-profile-logo img {
+    display: block;
+    max-width: 280px;
+    max-height: 150px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+.supplier-eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.supplier-profile h2 {
+    margin: 12px 0 24px;
+}
+
+.supplier-profile > p:not(.supplier-eyebrow):not(.supplier-back-link) {
+    line-height: 1.9;
+    text-align: left;
+}
+
+.supplier-cta {
+    display: inline-block;
+    margin: 24px 0;
+    padding: 14px 26px;
+    border-radius: 5px;
+    background: #174b75;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.supplier-cta:hover {
+    opacity: 0.9;
+}
+
+.supplier-back-link {
+    margin-top: 25px;
+}
+
+.supplier-back-link a {
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .suppliers-page,
+    .supplier-profile-page {
+        padding: 35px 18px 50px;
+    }
+
+    .supplier-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .supplier-profile-logo img {
+        max-width: 220px;
+    }
+}
