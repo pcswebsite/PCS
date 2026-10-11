@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>INA Pharmaceuticals | Pharma Content Solutions</title>
+
+    <meta name="description"
+        content="Discover INA Pharmaceuticals, a CRDMO partner for pharmaceutical intermediates, custom synthesis, and process development.">
+
+    <link rel="stylesheet" href="../../style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="header-container">
+
+            <a href="../../index.html" class="text-logo">
+                Pharma Content Solutions
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+                ☰
+            </button>
+
+            <nav class="main-nav" id="mainNav">
+
+                <a href="../../index.html">Home</a>
+
+                <a href="../../Services.html">Services</a>
+
+                <div class="nav-dropdown">
+                    <button class="dropdown-toggle" type="button">
+                        Blogs <span class="dropdown-arrow"></span>
+                    </button>
+
+                    <div class="dropdown-menu">
+                        <a href="../../blogs/The Evolving Pharmaceutical Excipients Landscape.html">
+                            The Evolving Pharmaceutical Excipients Landscape
+                        </a>
+
+                        <a href="../../blogs/Beyond Manufacturing.html">
+                            Beyond Manufacturing
+                        </a>
+
+                        <a href="../../blogs/Beyond Formulation.html">
+                            Beyond Formulation
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="nav-dropdown">
+                    <a href="../" class="dropdown-toggle">
+                        Suppliers <span class="dropdown-arrow"></span>
+                    </a>
+
+                    <div class="dropdown-menu">
+                        <a href="../gangwal/">Gangwal Healthcare</a>
+                        <a href="../ina/">INA Pharmaceuticals</a>
+                    </div>
+                </div>
+
+
+            </nav>
+        </div>
+    </header>
+
+    <main class="supplier-profile-page">
+
+        <section class="supplier-profile">
+
+            <a class="supplier-profile-logo" href="https://www.inapharma.in/index.php" target="_blank"
+                rel="noopener noreferrer">
+
+                <img src="../../images/ina-pharmaceuticals.png" alt="INA Pharmaceuticals logo">
+            </a>
+
+
+
+            <h1>INA Pharmaceuticals</h1>
+
+            <h2>
+                Your CRDMO Partner for Pharmaceutical Intermediates,
+                Custom Synthesis, and Process Development
+            </h2>
+
+            <p>
+                INA Pharmaceuticals is a research-driven pharmaceutical
+                company delivering innovative, reliable, and scalable
+                solutions across the global life sciences industry.
+                INA Pharma is a trusted CRDMO partner for pharmaceutical
+                intermediates, custom synthesis, and process development,
+                driven by quality, compliance, and sustainability.
+            </p>
+
+            <p>
+                Its unique and highly experienced research team forms
+                the foundation of INA Pharma's strength, bringing deep
+                expertise in CDMO, synthetic chemistry, process
+                development, and the scale-up of complex molecules.
+            </p>
+
+            <p>
+                INA Pharmaceuticals is a GMP-certified CDMO company with
+                8+ years of expertise, 50+ active customers worldwide,
+                and 1,000+ successful projects. It brings proven
+                experience and expertise to every CRDMO project.
+            </p>
+
+            <a class="supplier-cta" href="https://www.inapharma.in/index.php" target="_blank" rel="noopener noreferrer">
+                Explore the Portfolio →
+            </a>
+
+            <p class="supplier-back-link">
+                <a href="../">← Back to All Suppliers</a>
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2026 Pharma Content Solutions. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById("menuToggle");
+        const mainNav = document.getElementById("mainNav");
+        const dropdownToggle = document.querySelector(".dropdown-toggle");
+        const navDropdown = document.querySelector(".nav-dropdown");
+
+        menuToggle.addEventListener("click", function () {
+            const isOpen = mainNav.classList.toggle("active");
+            menuToggle.setAttribute("aria-expanded", isOpen);
+        });
+
+        if (dropdownToggle && navDropdown) {
+            dropdownToggle.addEventListener("click", function () {
+                if (window.innerWidth <= 768) {
+                    navDropdown.classList.toggle("open");
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>
