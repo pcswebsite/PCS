@@ -12,24 +12,6 @@
     <link rel="canonical" href="https://pharmacontentsolutions.com/">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<script>
-    const menuToggle = document.getElementById("menuToggle");
-    const mainNav = document.getElementById("mainNav");
-    const dropdownToggle = document.querySelector(".dropdown-toggle");
-    const navDropdown = document.querySelector(".nav-dropdown");
-
-    menuToggle.addEventListener("click", function () {
-        mainNav.classList.toggle("active");
-    });
-
-    dropdownToggle.addEventListener("click", function (e) {
-        e.preventDefault();
-
-        if (window.innerWidth <= 768) {
-            navDropdown.classList.toggle("open");
-        }
-    });
-</script>
 
 <body>
     <header class="site-header">
@@ -238,4 +220,24 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        const menuToggle = document.getElementById("menuToggle");
+        const mainNav = document.getElementById("mainNav");
+        const dropdownToggle = document.querySelector(".dropdown-toggle");
+        const navDropdown = document.querySelector(".nav-dropdown");
+
+        menuToggle.addEventListener("click", function () {
+            mainNav.classList.toggle("active");
+        });
+
+        dropdownToggle.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            if (window.innerWidth <= 768) {
+                navDropdown.classList.toggle("open");
+            }
+        });
+    </script>
+
 </body>
